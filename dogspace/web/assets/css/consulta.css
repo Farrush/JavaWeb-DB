@@ -1,0 +1,17 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+.frame-consulta{
+    width: 80%;
+    height: 600px;
+    border: none;
+}
+form{
+    margin-bottom: 20px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

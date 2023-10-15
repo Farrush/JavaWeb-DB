@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/formu.css"/>
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <link rel="stylesheet" href="./assets/css/consulta.css"/>
+        <title>Dosgpace - Consulta</title>
+    </head>
+    <body>
+        <form action="conPet.jsp" target="frame">
+            <h1>Busque um cachorro</h1>
+            <div class="input-field">
+                <label for="nome">Nome</label>
+                <input placeholder="Ex: Spike" maxlength="40" type="text" id="nome" name="nome">
+            </div>
+            <div class="input-field submit">
+                <input id="sub" type="submit" value="Buscar">
+            </div>
+        </form>
+        <iframe class="frame-consulta" name="frame">
+            
+        </iframe>
+    </body>
+</html>

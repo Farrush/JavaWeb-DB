@@ -13,7 +13,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="./assets/css/erros.css">
-        <title>JSP Page</title>
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <title>Dogspace - Cadastro</title>
     </head>
     <body>
         <% 
@@ -23,7 +24,10 @@
             nome = request.getParameter("nome");
             if(nome.equals("")){
                 nome = null;
+            }else{
+                nome = nome.replaceFirst(Character.toString(nome.charAt(0)), Character.toString(nome.charAt(0)).toUpperCase());
             }
+            
             raca = request.getParameter("raca");
             if(request.getParameter("idade").equals("") || request.getParameter("peso").equals("")){
                idade = 1;
@@ -51,7 +55,7 @@
                 st.executeUpdate();
                 %>
                     <div class="feedback">
-                        <h1>Executado com sucesso!</h1>
+                        <h1>Cadastrado com sucesso!</h1>
                         <img src="./assets/img/dog-feliz.jpg">
                     </div>
                 <%

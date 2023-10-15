@@ -1,15 +1,16 @@
-html, body{
-    height:100%;
-}
 
 .feedback{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     background-color: #FFFD;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.erro{
+    margin: 10px 0;
+    font-size: 28px;
 }
 .feedback img{
     width: 30%;
