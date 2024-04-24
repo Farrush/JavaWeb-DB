@@ -1,0 +1,581 @@
+14-Oct-2023 09:53:59.415 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Oct-2023 09:53:59.416 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Oct-2023 09:53:59.419 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3f08b61b')
+14-Oct-2023 10:17:08.350 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+14-Oct-2023 10:17:08.350 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+14-Oct-2023 10:17:15.554 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Oct-2023 10:17:15.554 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Oct-2023 10:17:15.557 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4afd526f')
+14-Oct-2023 10:18:10.512 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+14-Oct-2023 10:18:10.513 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+14-Oct-2023 10:18:22.836 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Oct-2023 10:18:22.836 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Oct-2023 10:18:22.839 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@75f2a765')
+14-Oct-2023 10:54:12.672 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [An exception occurred processing [/cadPet.jsp] at line [28]
+
+25:             if(nome.equals("")){
+26:                 nome = null;
+27:             }
+28:             nome = nome.replaceFirst(Character.toString(nome.charAt(0)), Character.toString(nome.charAt(0)).toUpperCase());
+29:             raca = request.getParameter("raca");
+30:             if(request.getParameter("idade").equals("") || request.getParameter("peso").equals("")){
+31:                idade = 1;
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException: Cannot invoke "String.charAt(int)" because "nome" is null
+		at org.apache.jsp.cadPet_jsp._jspService(cadPet_jsp.java:139)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:465)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 10:58:51.575 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+14-Oct-2023 10:58:51.575 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+14-Oct-2023 10:59:39.195 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Oct-2023 10:59:39.196 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Oct-2023 10:59:39.200 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4afd526f')
+14-Oct-2023 12:15:39.782 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [85] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [228] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [245] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [85] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [228] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [245] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 12:15:56.444 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+14-Oct-2023 12:15:56.444 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+14-Oct-2023 12:16:14.849 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+14-Oct-2023 12:16:14.849 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+14-Oct-2023 12:16:14.852 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4afd526f')
+14-Oct-2023 12:16:41.852 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [85] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [228] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [245] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [85] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [228] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [245] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 12:17:29.720 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [246] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [246] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 12:17:36.316 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [246] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [24] in the jsp file: [/carregarPet.jsp]
+Invalid character constant
+21:         <form action="alterar.jsp">
+22:             <h1>Altere os dados</h1>
+23:         <%
+24:             int id = Integer.parseInt(request.getParameter('cod'))
+25:             Conexao conexao = new Conexao();
+26:             Connection con = conexao.abreConec();
+27:             PreparedStatement st;
+
+
+An error occurred at line: [246] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 12:20:51.467 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [85] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [226] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [243] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [85] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [226] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [243] in the generated java file: [D:\Projetos\NetBeans\crud\tomcat\work\Catalina\localhost\dogspace\org\apache\jsp\carregarPet_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:600)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:381)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:335)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:597)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:398)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 12:20:55.189 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/dogspace] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.carregarPet_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.carregarPet_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:150)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:191)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:412)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:383)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:331)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:583)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:212)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:181)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:156)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:682)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:617)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:932)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1694)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+14-Oct-2023 12:39:56.900 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+14-Oct-2023 12:39:56.900 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

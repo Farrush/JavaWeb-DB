@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/formu.css"/>
+        <link rel="stylesheet" href="./assets/css/reset.css"/>
+    </head>
+    <body>
+        <form action="cadPet.jsp">
+            <h1>Cadastre um cachorro</h1>
+            <div class="input-field">
+                <label for="nome">Nome</label>
+                <input placeholder="Ex: Spike" maxlength="40" type="text" id="nome" name="nome">
+            </div>
+            <div class="input-field">
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="Macho">Macho</option>
+                    <option value="Fêmea">Fêmea</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <label for="idade">Idade</label>
+                <input type="number" placeholder="Ex: 2" max="30" min="0" id="idade" name="idade">
+            </div>
+            <div class="input-field">
+                <label for="peso">Peso</label>
+                <input placeholder="Ex: 5.84" type="number" min="0" step="0.1" id="peso" name="peso">
+            </div>
+            <div class="input-field">
+                <label for="raca">Raça</label>
+                <select name="raca" id="raca">
+                    <option value="Pinscher">Pinscher</option>
+                    <option value="Pug">Pug</option>
+                    <option value="SRD (Sem Raça Definida)">SRD</option>
+                    <option value="Bulldog">Bulldog</option>
+                    <option value="Shih Tzu">Shih Tzu</option>
+                    <option value="Yorkshire">Yorkshire</option>
+                    <option value="Border Collie">Border Collie</option>
+                    <option value="Spitz Alemão">Spitz Alemão</option>
+                    <option value="Golden Retriever">Golden Retriever</option>
+                </select>
+            </div>
+            <div class="input-field submit">
+                <input id="sub" type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </body>
+</html>
